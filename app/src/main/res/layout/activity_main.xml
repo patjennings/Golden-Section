@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/entireZone"
+    android:background="#3B423A"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/leftZone"
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        android:background="#FFCC00">
+        <EditText
+            style="@style/Fields"
+            android:textSize="72sp"
+            android:id="@+id/editText0"/>
+        <TextView
+            style="@style/Text"
+            android:textColor="#CC0000"
+            android:id="@+id/textView0"
+            android:textSize="72sp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rightZone"
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/leftZone">
+
+        <RelativeLayout
+            android:id="@+id/innerRightTopZone"
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            android:background="#FFCC66">
+            <EditText
+                style="@style/Fields"
+                android:textSize="64sp"
+                android:id="@+id/editText1"/>
+            <TextView
+                style="@style/Text"
+                android:textColor="#FF6600"
+                android:textSize="64sp"
+                android:id="@+id/textView1"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/innerRightBottomZone"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#666666"
+            android:layout_below="@+id/innerRightTopZone">
+            <EditText
+                style="@style/Fields"
+                android:textSize="52sp"
+                android:id="@+id/editText2"/>
+            <TextView
+                style="@style/Text"
+                android:textColor="#FFFF00"
+                android:textSize="52sp"
+                android:id="@+id/textView2"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
